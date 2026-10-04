@@ -34,12 +34,4 @@ Build for deployment:
 npm run build
 ```
 
-## Portfolio Notes
 
-Good portfolio talking points:
-
-- Built as a React/Vite application with reusable components, shared data modules, and utility functions.
-- Built algorithm animations from explicit state snapshots instead of mutating the DOM directly.
-- Designed each visualizer around the operation that matters most: swaps, search windows, LIFO/FIFO flow, traversal order, and graph frontier expansion.
-- Added a code-practice workspace with a browser-based JavaScript runner and test-case feedback.
-# DSA_Visualizer
