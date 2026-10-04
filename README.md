@@ -34,4 +34,24 @@ Build for deployment:
 npm run build
 ```
 
+## Deploy to GitHub Pages
 
+This is a Vite React app, so GitHub Pages should deploy the built `dist` folder, not the project root.
+
+Recommended setup:
+
+1. Push this repo to GitHub on the `main` branch.
+2. Go to the repo's `Settings` -> `Pages`.
+3. Under `Build and deployment`, choose `GitHub Actions`.
+4. Push a commit. The workflow in `.github/workflows/deploy.yml` will build the app and publish `dist`.
+
+The Vite config uses `base: "./"` so the generated asset links work on both user pages and project pages.
+
+## Portfolio Notes
+
+Good portfolio talking points:
+
+- Built as a React/Vite application with reusable components, shared data modules, and utility functions.
+- Built algorithm animations from explicit state snapshots instead of mutating the DOM directly.
+- Designed each visualizer around the operation that matters most: swaps, search windows, LIFO/FIFO flow, traversal order, and graph frontier expansion.
+- Added a code-practice workspace with a browser-based JavaScript runner and test-case feedback.
